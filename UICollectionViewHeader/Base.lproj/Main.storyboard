@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfH-Ge-hZ7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BeverageVC-->
+        <scene sceneID="EkA-Sh-1PM">
+            <objects>
+                <viewController id="vfH-Ge-hZ7" customClass="BeverageVC" customModule="UICollectionViewHeader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qga-5y-uss">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-yg-liL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bNs-qV-D2E">
+                                    <size key="itemSize" width="219" height="212"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="lWg-yZ-7YN" customClass="BeverageUICollectionViewCell" customModule="UICollectionViewHeader" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="50" width="219" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="212"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-dQ-0G2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="219" height="212"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l84-jo-5kh">
+                                                    <rect key="frame" x="0.0" y="172" width="219" height="40"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KU1-Iw-dMm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="219" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRo-k8-FtG">
+                                                                <rect key="frame" x="87.5" y="8.5" width="44.5" height="23.5"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="LRo-k8-FtG" firstAttribute="centerX" secondItem="KU1-Iw-dMm" secondAttribute="centerX" id="k8G-Jh-LQR"/>
+                                                            <constraint firstItem="LRo-k8-FtG" firstAttribute="centerY" secondItem="KU1-Iw-dMm" secondAttribute="centerY" id="qBw-r1-uDd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="V9c-o4-YVC"/>
+                                                    </constraints>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="l84-jo-5kh" secondAttribute="trailing" id="1Cb-hf-MAU"/>
+                                            <constraint firstItem="aK3-dQ-0G2" firstAttribute="leading" secondItem="lWg-yZ-7YN" secondAttribute="leading" id="5VL-d8-xyx"/>
+                                            <constraint firstAttribute="trailing" secondItem="aK3-dQ-0G2" secondAttribute="trailing" id="8mb-Yd-eih"/>
+                                            <constraint firstItem="l84-jo-5kh" firstAttribute="leading" secondItem="lWg-yZ-7YN" secondAttribute="leading" id="AIQ-Yd-ugB"/>
+                                            <constraint firstItem="aK3-dQ-0G2" firstAttribute="top" secondItem="lWg-yZ-7YN" secondAttribute="top" id="Kwu-Ew-tIS"/>
+                                            <constraint firstAttribute="bottom" secondItem="aK3-dQ-0G2" secondAttribute="bottom" id="aMk-y7-J5f"/>
+                                            <constraint firstAttribute="bottom" secondItem="l84-jo-5kh" secondAttribute="bottom" id="gKM-cP-tNH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="beverageImageView" destination="aK3-dQ-0G2" id="fZB-e9-GTN"/>
+                                            <outlet property="beverageNameLabel" destination="LRo-k8-FtG" id="zjA-dU-mWJ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerView" id="v2P-YM-Qo4" customClass="BeverageCollectionReusableView" customModule="UICollectionViewHeader" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beverage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knp-Jv-3da">
+                                            <rect key="frame" x="20" y="14.5" width="73" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Knp-Jv-3da" firstAttribute="centerY" secondItem="v2P-YM-Qo4" secondAttribute="centerY" id="DkQ-PL-JD5"/>
+                                        <constraint firstItem="Knp-Jv-3da" firstAttribute="leading" secondItem="v2P-YM-Qo4" secondAttribute="leading" constant="20" id="xeg-V1-Jd0"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="collectionHeaderTitleLabel" destination="Knp-Jv-3da" id="pmx-nF-zAn"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U4i-GB-v50" firstAttribute="bottom" secondItem="ceq-yg-liL" secondAttribute="bottom" id="HE4-u4-JR1"/>
+                            <constraint firstItem="U4i-GB-v50" firstAttribute="trailing" secondItem="ceq-yg-liL" secondAttribute="trailing" id="HnS-ih-9lM"/>
+                            <constraint firstItem="ceq-yg-liL" firstAttribute="top" secondItem="U4i-GB-v50" secondAttribute="top" id="Qf0-bC-EVd"/>
+                            <constraint firstItem="ceq-yg-liL" firstAttribute="leading" secondItem="U4i-GB-v50" secondAttribute="leading" id="nC8-O1-23b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U4i-GB-v50"/>
+                    </view>
+                    <connections>
+                        <outlet property="bevarageCollectionView" destination="ceq-yg-liL" id="roj-d1-Oha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvW-2f-vKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="93.75"/>
+        </scene>
+    </scenes>
+</document>
